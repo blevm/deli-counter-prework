@@ -8,7 +8,6 @@ def line(current_line)
       line_right_now << "#{index}. #{customer},"
     end
     puts "The line is currently: #{line_right_now}."
-    end
   end
 end
 
