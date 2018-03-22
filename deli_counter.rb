@@ -16,11 +16,11 @@ def take_a_number(line, customer)
   puts "Welcome, #{customer}. You are number #{line.index(customer)+1} in line."
 end
 
-def now_serving(array)
-  if array.length == 0
+def now_serving(line)
+  if line.length == 0
     puts "There is nobody waiting to be served!"
   else
-    puts "Currently serving #{array.first}."
-    array.shift
+    puts "Currently serving #{line.first}."
+    line.shift
   end
 end
