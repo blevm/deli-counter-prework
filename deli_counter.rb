@@ -4,8 +4,8 @@ def line(current_line)
     puts "The line is currently empty."
   else
     puts "The line is currently:"
-    current_line.each_with_index.map do |customer, index|
-      "#{index}. #{customer}."
+    current_line.each_with_index do |customer, index|
+      "#{index}. #{customer},"
     end
   end
 end
