@@ -13,5 +13,5 @@ end
 
 def take_a_number(line, customer)
   line << customer
-  "#{customer} #{line[customer.index]}"
+  puts "#{customer} #{line.find_index(customer)+1}"
 end
