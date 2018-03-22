@@ -7,7 +7,7 @@ def line(current_line)
     current_line.each_with_index do |customer, index|
       line_right_now << "#{index}. #{customer},"
     end
-    puts "The line is currently: #{line_right_now}."
+    puts "The line is currently: #{line_right_now.join(" ")}."
   end
 end
 
