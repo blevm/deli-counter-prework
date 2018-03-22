@@ -6,7 +6,8 @@ def line(current_line)
     puts "The line is currently:"
     current_line.each_with_index.map do |customer, index|
       "#{index}. #{customer},"
+    end
+  end
 end
 
 def take_a_number
-  
