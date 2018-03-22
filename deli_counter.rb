@@ -3,9 +3,11 @@ def line(current_line)
   if current_line.length == 0
     puts "The line is currently empty."
   else
-    puts "The line is currently:"
+    line_right_now = []
     current_line.each_with_index do |customer, index|
-      "#{index}. #{customer},"
+      line_right_now << "#{index}. #{customer},"
+    end
+    puts "The line is currently: #{line_right_now}."
     end
   end
 end
