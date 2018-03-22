@@ -15,3 +15,8 @@ def take_a_number(line, customer)
   line << customer
   puts "Welcome, #{customer}. You are number #{line.index(customer)+1} in line."
 end
+
+def now_serving(array)
+ puts "Currently serving #{array.first}"
+ array.unshift
+end
